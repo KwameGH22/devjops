@@ -8,7 +8,7 @@ const Navbar = () => {
         <h1 className='navbarTitle'>
             devjobs
         </h1>
-        <div className='hamburgerIcon'>
+        <div className='navbarMenuIcon'>
           <GiHamburgerMenu/>
         </div>
 

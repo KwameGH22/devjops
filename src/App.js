@@ -2,28 +2,25 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import Card from "./components/Card";
+import data from "./data/data.json";
 
 function App() {
-  let  data = require ("./data/data.json");
+  const [id, postedAt, contract, position, company, location] = data
 
 
   return (
     <div className="App">
       <Navbar/>
-      {data.map((item) => {return (
-       <Card 
-          id ={item.id}
-          postdate={item.postdate}
-          contract={item.contract}
-          position={item.position}
-          company={item.company}
-          location={item.location}
-
-        />
-        )}
-          )
-        }
       
+      <Card 
+          id ={id}
+          postdate={postedAt}
+          contract={contract}
+          position={position}
+          company={company}
+          location={location}
+      />
+       
 
       
     </div>
